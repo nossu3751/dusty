@@ -5,6 +5,7 @@ import {
     StyleSheet,
 } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
+import {HERE_API_NAME, HERE_API_KEY} from 'react-native-dotenv';
 
 class Location extends Component{
     constructor(props){
@@ -41,6 +42,7 @@ class Location extends Component{
                 <Text>
                     Latitude: {this.state.latitude},
                     Longitude: {this.state.longitude}.
+                    API Name: {HERE_API_NAME}
                 </Text>
             </View>
         ); 
