@@ -29,6 +29,7 @@ import {
 import Geolocation from '@react-native-community/geolocation';
 import Inputs from './app/components/input.js';
 import Location from './app/components/location.js';
+import AirQuality from './app/components/air_quality.js';
 
 class Clock extends React.Component{
   constructor(props){
@@ -79,6 +80,7 @@ class App extends Component {
           <Text> Hello, {this.state.name}</Text>
         </View>
         <Location />
+        <AirQuality />
         <View>
           <Text>
             <Clock />
