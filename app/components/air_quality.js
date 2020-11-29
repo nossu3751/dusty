@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import axios from 'axios';
 import {AIR_VISUAL_KEY} from 'react-native-dotenv';
+import Location from './location.js';
 
 class AirQuality extends Component{
 
     constructor(props){
         super(props);
         this.state = {
-
+            
         }
     }
 

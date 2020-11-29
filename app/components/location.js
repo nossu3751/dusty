@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import {HERE_API_NAME, HERE_API_KEY} from 'react-native-dotenv';
 import axios from 'axios';
+import {connect} from 'react-redux';
 
 class Location extends Component{
 
@@ -73,6 +74,17 @@ class Location extends Component{
     }
 }
 
+// function mapStateToProps(state) {
+//     return {
+//         latitude: state.latitude,
+//         longitude: state.longitude,
+//         city: state.city,
+//         stateName: state.stateName,
+//         country: state.country,
+//     }
+// }
+
+// export default connect(mapStateToProps)(Location);
 export default Location;
 
 locationStyles = StyleSheet.create({
